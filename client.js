@@ -31,6 +31,44 @@ const employees = [
   }
 ];
 
+for (let i = 0; i < employees.length; i++) {
+  let employee = employees[i];
+  const worker = new empCheck(employee);
+console.log(employee);
+
+}
+
+function empCheck(employee){
+  this.name = employee.name;
+  this.totalCompensation = employee.employeeNumber;
+  this.totalBonus = employee.annualSalary;
+  this.bonusPercentage = employee.reviewRating;
+  
+} 
+
+
+function reviewRatingCheck( reviewRating ){
+  //declare review check bonus calculating function
+  if ( employee.reviewRating === 5 && employeeNumber.length === 4 ){
+    let bonusPercentage === .13;
+    
+  
+  } else if (employee.reviewRating === 5 && employeeNumber.length !== 4) {
+    let bonusPercentage === .10;
+    
+  
+  } else if (employee.reviewRating === 4 ){
+    let bonusPercentage === .06;
+  
+  } else if (employee.reviewRating === 3) {
+    let bonusPercentage === .04;
+  }
+    else{
+      let bonusPercentage === 0;
+    }
+
+
+
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
@@ -40,4 +78,4 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+console.log(employees);
